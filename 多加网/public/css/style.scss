@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: .3rem;
+    color: #fff;
+}
+
+@mixin num($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin box_flex($fl) {
+    display: $fl;
+}
+
+@mixin back($ba) {
+    background: $ba;
+}
+
+html,
+body,
+.wrap {
+    @include num(100%, 100%);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    background: #1D1D28;
+    overflow: hidden;
+    header {
+        @include num(100%, 1.6rem);
+        .top {
+            @include num(100%, .8rem);
+            display: flex;
+            justify-content: space-between;
+            line-height: .8rem;
+        }
+        .bottom {
+            @include num(100%, .9rem);
+            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+            line-height: .9rem;
+            display: flex;
+            justify-content: space-between;
+            img {
+                @include num(.8rem, .5rem);
+                margin: .15rem 0;
+            }
+            input {
+                height: .6rem;
+                flex: 1;
+                margin: .08rem .18rem;
+                border-radius: .1rem;
+            }
+        }
+    }
+    section {
+        flex: 1;
+        margin-top: .2rem;
+        .swiper-container {
+            @include num(100%, 3.5rem);
+            img {
+                @include num(80%, 3rem);
+                margin: .25rem 10%;
+            }
+        }
+        .zdl {
+            @include num(100%, 3.5rem);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            dl {
+                @include num(25%, 1.8rem);
+                margin: .1rem 0;
+                dd {
+                    @include num(100%, 1rem);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        @include num(1rem, 1rem);
+                    }
+                }
+                dt {
+                    line-height: .8rem;
+                    @include num(100%, .8rem);
+                    text-align: center;
+                    font-size: .25rem;
+                }
+            }
+        }
+        .gold {
+            @include num(100%, .8rem);
+            display: flex;
+            justify-content: space-around;
+            line-height: .8rem;
+            margin: .2rem 0;
+            span:nth-of-type(1) {
+                @include num(.1rem, 80%);
+                background: yellow;
+                margin: .1rem;
+            }
+            span:nth-of-type(2) {
+                flex: 1;
+            }
+        }
+        .shop {
+            @include num(110%, 2rem);
+            display: flex;
+            overflow: hidden;
+            margin: .1rem 0;
+            li {
+                @include num(52%, 1.5rem);
+                margin: .1rem;
+                text-align: center;
+                //background: red;
+                background: url("../img/国际@2x.png") center center no-repeat;
+                //padding: 1rem;
+                background-size: cover;
+                line-height: 1.5rem;
+                font-size: .4rem;
+            }
+            li:nth-of-type(2) {
+                background: url("../img/黄@2x.png") center center no-repeat;
+            }
+        }
+    }
+    footer {
+        @include num(100%,
+        1rem);
+        display: flex;
+        justify-content: space-around;
+        line-height: 1rem;
+        font-size: .32rem;
+        background: #fff;
+        li {
+            color: #333;
+            .icon {
+                color: #333;
+                margin: 0 .1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,170 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: .3rem;
+  color: #fff;
+}
+
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  background: #1D1D28;
+  overflow: hidden;
+}
+
+.wrap header {
+  width: 100%;
+  height: 1.6rem;
+}
+
+.wrap header .top {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: .8rem;
+}
+
+.wrap header .bottom {
+  width: 100%;
+  height: 0.9rem;
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  line-height: .9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap header .bottom img {
+  width: 0.8rem;
+  height: 0.5rem;
+  margin: .15rem 0;
+}
+
+.wrap header .bottom input {
+  height: .6rem;
+  flex: 1;
+  margin: .08rem .18rem;
+  border-radius: .1rem;
+}
+
+.wrap section {
+  flex: 1;
+  margin-top: .2rem;
+}
+
+.wrap section .swiper-container {
+  width: 100%;
+  height: 3.5rem;
+}
+
+.wrap section .swiper-container img {
+  width: 80%;
+  height: 3rem;
+  margin: .25rem 10%;
+}
+
+.wrap section .zdl {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wrap section .zdl dl {
+  width: 25%;
+  height: 1.8rem;
+  margin: .1rem 0;
+}
+
+.wrap section .zdl dl dd {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap section .zdl dl dd img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.wrap section .zdl dl dt {
+  line-height: .8rem;
+  width: 100%;
+  height: 0.8rem;
+  text-align: center;
+  font-size: .25rem;
+}
+
+.wrap section .gold {
+  width: 100%;
+  height: 0.8rem;
+  display: flex;
+  justify-content: space-around;
+  line-height: .8rem;
+  margin: .2rem 0;
+}
+
+.wrap section .gold span:nth-of-type(1) {
+  width: 0.1rem;
+  height: 80%;
+  background: yellow;
+  margin: .1rem;
+}
+
+.wrap section .gold span:nth-of-type(2) {
+  flex: 1;
+}
+
+.wrap section .shop {
+  width: 110%;
+  height: 2rem;
+  display: flex;
+  overflow: hidden;
+  margin: .1rem 0;
+}
+
+.wrap section .shop li {
+  width: 52%;
+  height: 1.5rem;
+  margin: .1rem;
+  text-align: center;
+  background: url("../img/国际@2x.png") center center no-repeat;
+  background-size: cover;
+  line-height: 1.5rem;
+  font-size: .4rem;
+}
+
+.wrap section .shop li:nth-of-type(2) {
+  background: url("../img/黄@2x.png") center center no-repeat;
+}
+
+.wrap footer {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: space-around;
+  line-height: 1rem;
+  font-size: .32rem;
+  background: #fff;
+}
+
+.wrap footer li {
+  color: #333;
+}
+
+.wrap footer li .icon {
+  color: #333;
+  margin: 0 .1rem;
+}
